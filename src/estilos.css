@@ -296,6 +296,12 @@ footer p {
 /* ----------------------------- RESPONSIVIDADE (mobile) ----------------------------- */
 
 @media (max-width: 768px) {
+    .all {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    
     /* Header */
 
     .menu-toggle {
@@ -331,6 +337,7 @@ footer p {
 
     nav.menu {
         z-index: 99999;
+        width: 100%;
     }
 
     .logo img {
