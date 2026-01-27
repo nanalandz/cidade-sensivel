@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cidade Sensível</title>
+    <link rel="stylesheet" href="src/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="src/img/logo-colorida-cidade-sensivel.png" alt="">
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul id="menu-list">
+                <li><a>Início</a></li>
+                <li><a>Projeto</a></li>
+                <li><a>Oficinas</a></li>
+                <li class="expo"><a>A Exposição</a>
+                    <ul class="expo_submenu">
+                        <li class="expo_subitem"><a>Obra 1</a></li>
+                        <li class="expo_subitem"><a>Obra 2</a></li>
+                        <li class="expo_subitem"><a>Obra 3</a></li>
+                        <li class="expo_subitem"><a>Obra 4</a></li>
+                        <li class="expo_subitem"><a>Obra 5</a></li>
+                        <li class="expo_subitem"><a>Obra 6</a></li>
+                        <li class="expo_subitem"><a>Obra 7</a></li>
+                    </ul>
+                </li>
+                <li><a>Intervenção Urbana</a></li>
+                <li><a>Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio Buttons -->
+                    <input type="radio" name="radio-btn" id="radio1" onclick="resetTimer(1)">
+                    <input type="radio" name="radio-btn" id="radio2" onclick="resetTimer(2)">
+                    <input type="radio" name="radio-btn" id="radio3" onclick="resetTimer(3)">
+                    <input type="radio" name="radio-btn" id="radio4" onclick="resetTimer(4)">
+                    <input type="radio" name="radio-btn" id="radio5" onclick="resetTimer(5)">
+                    <input type="radio" name="radio-btn" id="radio6" onclick="resetTimer(6)">
+
+                    <!-- Slide images -->
+                    <div class="slide first">
+                        <img src="src/img/imagem1.jpg" alt="imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/imagem2.jpg" alt="imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/imagem3.jpg" alt="imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/imagem4.jpg" alt="imagem 4">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/imagem5.jpg" alt="imagem 5">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/imagem6.jpg" alt="imagem 6">
+                    </div>
+
+                    <!-- Navigation auto -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                    </div>
+                </div>
+
+                <!-- Manual Navigation -->
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <!-- Instagram link -->
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="src/img/insta.png">
+                <p>Instagram</p>
+            </a>
+        </footer>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
