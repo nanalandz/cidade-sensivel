@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@font-face {
+    font-family: 'carbonBlack';
+    src: url('./fonts/carbon bl.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ----------------------------------- Reset / base ----------------------------------- */
 
 * {
@@ -63,6 +70,8 @@ nav li {
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     padding: 6px 15px;
+
+    font-size: 18px;
 }
 
 nav li:hover {
