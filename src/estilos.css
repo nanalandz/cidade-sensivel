@@ -9,15 +9,47 @@
 
 /* ----------------------------------- Reset / base ----------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+a, button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* ----------------------------- Botão de Volta ao Topo -----------------------------  */
+
+#backToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    width: 44px;
+    height: 44px;
+    text-align: center;
+
+    border: none;
+    border-radius: 50%;
+    background: #7d4a47;
+    color: #fff;
+    opacity: 0.5;
+
+    font-size: 1.2rem;
+    /* cursor: pointer; */
+
+    display: none;
+    z-index: 999999;
+}
+
+#backToTop:hover {
+    opacity: 0.8;
 }
 
 /* ---------------------------------- Layout geral ----------------------------------  */
@@ -27,7 +59,7 @@ body {
 }
 
 .container {
-    background-color: feeae3;
+    background-color: #feeae3;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -54,9 +86,15 @@ header {
 
 /* Menu de navegação */
 
-nav.menu {
+.nav-wrapper {
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+nav.menu {
+    position: relative;
     top: 0;
     z-index: 9999;
     width: 100%;
@@ -223,27 +261,40 @@ footer p {
         max-width: 100%;
         margin: 0;
     }
-    
+
+    #backToTop {
+        display: block;
+    }
+
     /* Header */
+
+    .logo img {
+        min-width: 150px;
+    }
 
     .menu-toggle {
         display: flex;
     }
 
+    .nav-wrapper {
+        position: relative;
+    }
+
+    nav.menu {
+        z-index: 99999;
+        width: 100%;
+    }
+
     nav ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 100%;
-        /* background-color: #cfb288; */
-
-        overflow: hidden;
-        max-height: 0;
         padding: 0;
         transition: max-height 0.5s ease-in-out;
     }
 
     nav ul.show {
-        max-height: 500px;
+        display: flex;
     }
 
     nav li {
@@ -253,28 +304,38 @@ footer p {
         text-align: center;
     }
 
+    nav li, nav li a {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
     nav li:first-child {
         border-top: 1px solid #000;
     }
 
-    nav.menu {
-        z-index: 99999;
-        width: 100%;
+    .expo_submenu, .clipping_submenu {
+        display: none;
+        position: static;
+        color: #fff;
     }
 
-    .logo img {
-        min-width: 150px;
+    .submenu-open {
+        display: block;
     }
+
+    li:has(ul.submenu-open) {
+        background-color: #7d4a47;
+        color: #fff;
+    }
+
 }
 
 /* --------------------------------- RESPONSIVIDADE (telas grandes) --------------------------------- */
 
 @media (min-width: 769px) {
-    nav li:hover .expo_submenu {
+    nav li:hover .expo_submenu, nav li:hover .clipping_submenu {
         display: block;
     }
 
-    nav li:hover .clipping_submenu {
-        display: block;
-    }
 }
