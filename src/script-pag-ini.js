@@ -28,7 +28,9 @@ window.addEventListener("scroll", () =>{
     }
 });
 
-backToTop.addEventListener("click", () => {
+backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    
     window.scrollTo({
         top: 0,
         behavior: "smooth"
