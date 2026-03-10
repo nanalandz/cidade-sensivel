@@ -7,10 +7,14 @@
     font-style: normal;
 }
 
-/* ----------------------------------- Reset / base ----------------------------------- */
+/* Reset / base */
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
 }
 
 *, *::before, *::after {
@@ -33,7 +37,7 @@ a {
     color: inherit;
 }
 
-/* ----------------------------- Botão de Volta ao Topo -----------------------------  */
+/* Botão de Volta ao Topo  */
 
 #backToTop {
     position: fixed;
@@ -61,7 +65,7 @@ a {
     opacity: 0.8;
 }
 
-/* ---------------------------------- Layout geral ----------------------------------  */
+/* Layout geral */
 
 body {
     background-color: #fee3f7;
@@ -80,7 +84,7 @@ body {
     font-style: normal;
 }
 
-/* ---------------------------------------- header ---------------------------------------- */
+/* header */
 
 header {
     text-align: center;
@@ -197,7 +201,7 @@ nav li:hover {
     color: #000;
 }
 
-/* ------------------------ Menu Toggle (visível apenas no mobile) ------------------------ */
+/* Menu Toggle (visível apenas no mobile) */
 
 .menu-toggle {
     display: none;
@@ -232,7 +236,7 @@ nav li:hover {
 }
 
 
-/* ---------------------------------------- footer ---------------------------------------- */
+/* footer */
 
 footer {
     background-color: #ce8598;
@@ -260,8 +264,63 @@ footer p {
     margin: 0;
 }
 
+/* Instituições */
+
+#rodape {
+    width: 100%;
+    background-color: #fff;
+}
+
+#rodape img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#rodape_mobile {
+    display: none;
+    background-color: #fff;
+}
+
 
 /* ----------------------------- RESPONSIVIDADE (mobile) ----------------------------- */
+
+@media (max-width: 1200px) {
+    #rodape {
+        display: none;
+    }
+
+    #rodape_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .rodape-item {
+        margin: 10px;
+    }
+
+    .rodape-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rodape-logo-medio { width: 200px; }
+    .rodape-logo-cumprido { width: 300px; }
+    .rodape-logo-menor { width: 100px; }
+    .rodape-logo-longo { height: 150px; }
+    .snc_hor { width: 100%; }
+    .snc_ver { display: none; width: 100%; }
+
+    .trecho {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media (max-width: 768px) {
     .all {
@@ -336,6 +395,9 @@ footer p {
         background-color: #7d4a47;
         color: #fff;
     }
+
+    .snc_ver { display: block; }
+    .snc_hor { display: none; }
 
 }
 
