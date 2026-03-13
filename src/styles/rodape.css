@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: 'carbonBlack';
+    src: url('/src/fonts/carbon bl.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Instituições */
+
+#rodape {
+    width: 100%;
+    background-color: #fff;
+}
+
+#rodape img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#rodape_mobile {
+    display: none;
+    background-color: #fff;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    #rodape {
+        display: none;
+    }
+
+    #rodape_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: carbonBlack;
+        font-size: 21px;
+    }
+
+    .subdivisao-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape-item {
+        margin: 10px;
+    }
+
+    .rodape-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rodape-logo-medio { width: 200px; }
+    .sceic { width: 300px; }
+    .rodape-logo-cumprido { width: 300px; }
+    .rodape-logo-menor { width: 100px; }
+    .rodape-logo-longo { height: 175px; }
+    .snc_hor { width: 100%; }
+    .snc_ver { display: none; width: 100%; }
+
+    .trecho {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .all {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .snc_ver { display: block; }
+    .snc_hor { display: none; }
+}

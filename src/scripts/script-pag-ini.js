@@ -1,20 +1,3 @@
-// menu sanduíche
-function toggleMenu() {
-    const menu = document.getElementById("menu-list");
-    const toggle = document.querySelector(".menu-toggle");
-
-    menu.classList.toggle("show")
-
-    toggle.classList.toggle("active");
-}
-
-document.querySelectorAll(".submenu-toggle").forEach(btn => {
-    btn.addEventListener("click", function () {
-        const submenu = this.nextElementSibling;
-        submenu.classList.toggle("submenu-open");
-    });
-});
-
 // backToTop BUTTON
 const backToTop = document.getElementById("backToTop");
 

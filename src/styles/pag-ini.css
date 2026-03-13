@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'carbonBlack';
-    src: url('./fonts/carbon bl.otf');
+    src: url('/src/fonts/carbon bl.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,10 +11,10 @@
 
 main {
     width: 100%;
-    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
 
 .slider {
