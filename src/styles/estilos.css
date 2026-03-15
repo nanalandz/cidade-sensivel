@@ -99,6 +99,7 @@ header {
 /* footer */
 
 footer {
+    clear: both;
     background-color: #ce8598;
     padding: 20px;
     display: flex;

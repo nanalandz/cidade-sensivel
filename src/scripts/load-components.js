@@ -19,6 +19,6 @@ function initNavbar() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadComponent("navbar", "/src/components/navbar.html");
-    loadComponent("rodape-holder", "/src/components/rodape.html");
+    loadComponent("navbar", "src/components/navbar.html");
+    loadComponent("rodape-holder", "src/components/rodape.html");
 })

@@ -150,6 +150,10 @@ nav li:hover {
         display: flex;
     }
 
+    .botao-expo {
+        pointer-events: none;
+    }
+
     .nav-wrapper {
         position: relative;
     }
@@ -178,7 +182,8 @@ nav li:hover {
         text-align: center;
     }
 
-    nav li, nav li a {
+    nav li,
+    nav li a {
         white-space: normal;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -188,7 +193,8 @@ nav li:hover {
         border-top: 1px solid #000;
     }
 
-    .expo_submenu, .clipping_submenu {
+    .expo_submenu,
+    .clipping_submenu {
         display: none;
         position: static;
         color: #fff;
@@ -203,13 +209,20 @@ nav li:hover {
         color: #fff;
     }
 
-    .snc_ver { display: block; }
-    .snc_hor { display: none; }
+    .snc_ver {
+        display: block;
+    }
+
+    .snc_hor {
+        display: none;
+    }
 
 }
 
 @media (min-width: 769px) {
-    nav li:hover .expo_submenu, nav li:hover .clipping_submenu {
+
+    nav li:hover .expo_submenu,
+    nav li:hover .clipping_submenu {
         display: block;
     }
 

@@ -1,62 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-@font-face {
-    font-family: 'carbonBlack';
-    src: url('/src/fonts/carbon bl.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-.card h2 {
-    font-size: 38px;
-    font-family: 'carbonBlack';
-    padding: 15px 0 25px 30px;
-}
-
-.card .video-texto {
-    padding: 25px;
-    align-items: center;
-    text-align: center;
-}
-
-.card .video {
-    float: left;
-    padding-right: 20px;
-    padding-bottom: 5px;
-}
-
-.card p {
-    text-align: justify;
-    text-justify: inter-word;
-    margin-bottom: 15px;
+.card {
+    background-color: #b6d694;
 }
 
 .card .fotos {
+    background-color: #95c5cb;
+}
+
+/* download relatório */
+
+.download-relatorio {
+    background-color: #ff5f5f;
+    padding: 0px 10px;
     display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.download-relatorio a {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 10px;
+    gap: 6px;
+    text-decoration: none;
 }
 
-.card .fotos img {
-    max-width: 20%;
+.download-relatorio img {
+    width: 30px;
     height: auto;
-    padding: 5px;
+    display: block;
 }
 
-@media (max-width: 520px) {
-    .card .video {
-        padding-right: 0;
-        width: 100%;
-        float: center;
-    }
-
-    .card .fotos {
-        padding: 0;
-        margin: 0;
-    }
+.download-relatorio p {
+    margin-top: 15px;
+    font-size: 20px;
 }
