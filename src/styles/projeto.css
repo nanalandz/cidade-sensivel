@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: 'carbonBlack';
+    src: url('/src/fonts/carbon bl.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.card h2 {
+    font-size: 38px;
+    font-family: 'carbonBlack';
+    padding: 15px 0 25px 30px;
+}
+
+.card .video-texto {
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.card .video {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.card p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 15px;
+}
+
+.card .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.card .fotos img {
+    max-width: 20%;
+    height: auto;
+    padding: 5px;
+}
+
+@media (max-width: 520px) {
+    .card .video {
+        padding-right: 0;
+        width: 100%;
+        float: center;
+    }
+
+    .card .fotos {
+        padding: 0;
+        margin: 0;
+    }
+}
