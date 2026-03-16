@@ -54,6 +54,10 @@
     margin-bottom: 15px;
 }
 
+.card p strong {
+    font-weight: 900;
+}
+
 .card .fotos {
     display: flex;
     flex-wrap: wrap;
