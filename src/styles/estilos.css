@@ -84,6 +84,19 @@ body {
     font-style: normal;
 }
 
+.container h1 {
+    padding-top: 25px;
+    font-family: 'carbonBlack';
+    font-size: 38px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.container h2 {
+    font-family: 'carbonBlack';
+    font-size: 30px;
+}
+
 /* header */
 
 header {

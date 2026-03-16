@@ -1,0 +1,55 @@
+.line {
+    clear: both;
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .texto {
+    padding: 20px;
+}
+
+.container p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 15px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 95%;
+}
+
+.texto .intertexto-dir {
+    float: right;
+    width: 315px;
+}
+
+.texto .intertexto-esq {
+    float: left;
+    width: 315px;
+}
+
+@media (max-width: 550px) {
+    .texto .intertexto-dir {
+        float: none;
+        width: 95%;
+    }
+
+    .texto .intertexto-esq {
+        float: none;
+        width: 95%;
+    }
+}
