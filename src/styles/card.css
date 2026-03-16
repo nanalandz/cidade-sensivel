@@ -12,6 +12,7 @@
 }
 
 .card h2 {
+    clear: both;
     font-size: 38px;
     font-family: 'carbonBlack';
     padding: 15px 0 25px 30px;
@@ -24,6 +25,15 @@
     background-color: black;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.line2 {
+    clear: both;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .card .video-texto {
