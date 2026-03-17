@@ -80,7 +80,7 @@
 @media (max-width: 620px) {
     .card .video-hor {
         max-width: 100%;
-        float: center;
+        padding: 0;
     }
 
     .card .video-hor iframe {
@@ -92,14 +92,12 @@
 
 @media (max-width: 520px) {
     .card .video {
-        padding-right: 0;
+        padding: 0;
         width: 100%;
-        float: center;
     }
 
     .card .video iframe {
         width: 100%;
-        /* height: auto; */
     }
 
     .card .fotos {
