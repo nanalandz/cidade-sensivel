@@ -9,6 +9,7 @@
 
 .card {
     padding-bottom: 20px;
+    display: flow-root;
 }
 
 .card h2 {
@@ -33,7 +34,6 @@
     height: 3px;
     background-color: black;
     margin: 0 auto;
-    margin-bottom: 15px;
 }
 
 .card .video-texto {
@@ -74,11 +74,29 @@
     padding: 5px;
 }
 
+@media (max-width: 620px) {
+    .card .video-hor {
+        max-width: 100%;
+        float: center;
+    }
+
+    .card .video-hor iframe {
+        width: 100%;
+        float: center;
+        height: auto;
+    }
+}
+
 @media (max-width: 520px) {
     .card .video {
         padding-right: 0;
         width: 100%;
         float: center;
+    }
+
+    .card .video iframe {
+        width: 100%;
+        /* height: auto; */
     }
 
     .card .fotos {

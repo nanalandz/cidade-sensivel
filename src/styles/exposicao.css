@@ -2,3 +2,25 @@
     width: 315px;
     height: auto;
 }
+
+.card.card-impar {
+    background-color: #eec680;
+}
+
+.card.card-impar .fotos {
+    background-color: #b36f63;
+}
+
+.card.card-par {
+    background-color: #c99b5e;
+}
+
+.card.card-par .fotos {
+    background-color: #7e4947;
+}
+
+.card.card-par .video {
+    float: right;
+    padding-right: 0;
+    padding-left: 20px;
+}

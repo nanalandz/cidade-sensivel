@@ -8,10 +8,27 @@
     margin-top: 10px;
 }
 
+.line2 {
+    clear: both;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto;
+}
+
 .container {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.conteudo {
+    background-color: #c7e7fb;
+    display: flow-root;
 }
 
 .container .texto {
@@ -25,21 +42,25 @@
 }
 
 .container h2 {
-    margin-bottom: 20px;
+    margin: 15px auto 15px 25px;
+    width: fit-content;
 }
 
 .container img {
-    width: 95%;
+    width: 100%;
 }
 
-.texto .intertexto-dir {
+.texto .img-dir {
     float: right;
     width: 315px;
+    padding: 0 0 10px 20px;
+    
 }
 
-.texto .intertexto-esq {
+.texto .img-esq {
     float: left;
     width: 315px;
+    padding: 0 20px 10px 0;
 }
 
 @media (max-width: 550px) {
