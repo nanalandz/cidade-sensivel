@@ -1,11 +1,7 @@
 <!-- Fotografias têm que abrir
- Fotografias têm que ser do mesmo tamanho
+ Retirar Produçao ou Apoio
  Vídeo de Cidade Substantivo Feminino 404  -> NATH
- Mapa solar só tem quatro fotos -> NATH
- Alterar a cor da página 
- Corrigir o menu sticky 
- Criar recurso de nav ir para o local da página clicado 
- Criar links nos subitens do nav -->
+ Mapa solar só tem quatro fotos -> NATH -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +34,7 @@
 
         <div class="line2" style="margin-top: 10px;"></div>
 
-        <div class="card card-impar">
+        <section class="card card-impar" id="expografia">
             <h2>Expografia</h2>
             <div class="line"></div>
             <div class="fotos">
@@ -78,11 +74,11 @@
                     Digital: GuiNani. Iluminação: Denizart. Coordenação de Montagem/Desmontagem: Xavier de Sá e Débora
                     Bueno. Produção: Elora Carolina. Produção de Campo: Rafael Costa. Parceria: Fundação Inova Prudente
                 </p>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-par">
+            <section class="card card-par" id="carimbos">
                 <h2>Carimbos Sensíveis</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -128,11 +124,11 @@
 
                 </div>
 
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-impar">
+            <section class="card card-impar" id="sem-desconto">
                 <h2>Sem Desconto</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -168,11 +164,11 @@
                         Vozes: Lizis, Mateuzinho Umbigaê, GuiNani, Nathália Campos e Bruna Parizi
                     </p>
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-par">
+            <section class="card card-par" id="retomada">
                 <h2>Retomada</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -209,11 +205,11 @@
                         maneiras.
                     </p>
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-impar">
+            <section class="card card-impar" id="cidade">
                 <h2>Cidade Substantivo Feminino?</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -247,11 +243,11 @@
                         Campos
                     </p>
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-par">
+            <section class="card card-par" id="mapa-solar">
                 <h2>Mapa Solar</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -289,11 +285,11 @@
                     </p>
 
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-impar">
+            <section class="card card-impar" id="janelas">
                 <h2>Janelas</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -333,11 +329,11 @@
                         Desenvolvimento Tecnologia: Gui Nani Assistência: Luciano Conde, Henly Cézio e Bruna Freitas.
                     </p>
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-par">
+            <section class="card card-par" id="conto-cidade">
                 <h2>Conto Cidade</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -375,11 +371,11 @@
                         de tecnologia: Gui Nani.</p>
 
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
-            <div class="card card-impar">
+            <section class="card card-impar" id="cidade-dorme">
                 <h2>Performance Cidade Dorme</h2>
                 <div class="line"></div>
                 <div class="fotos">
@@ -419,7 +415,7 @@
 
 
                 </div>
-            </div>
+            </section>
 
             <div class="line2"></div>
 
@@ -438,6 +434,16 @@
     <script src="src/scripts/load-components.js"></script>
     <script src="src/scripts/navbar.js"></script>
     <script src="src/scripts/back-to-top.js"></script>
+    <script>
+        window.onload = function() {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            }
+        };
+    </script>
 </body>
 
 </html>

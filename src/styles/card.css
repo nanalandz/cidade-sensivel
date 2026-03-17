@@ -8,6 +8,7 @@
 }
 
 .card {
+    scroll-margin-top: 60px;
     padding-bottom: 20px;
     display: flow-root;
 }
@@ -69,8 +70,10 @@
 }
 
 .card .fotos img {
-    max-width: 20%;
-    height: auto;
+    width: 20%;
+    height: 15vw;
+    object-fit: cover;
+    object-position: center;
     padding: 5px;
 }
 
