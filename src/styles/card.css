@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'carbonBlack';
-    src: url('/src/fonts/carbon bl.otf');
+    src: url('src/fonts/carbon\ bl.otf');
     font-weight: normal;
     font-style: normal;
 }
