@@ -10,7 +10,7 @@
     height: auto;
 }
 
-.card.card-impar {
+/* .card.card-impar {
     background-color: #eec680;
 }
 
@@ -24,7 +24,7 @@
 
 .card.card-par .fotos {
     background-color: #7e4947;
-}
+} */
 
 .card.card-par .video {
     float: right;
