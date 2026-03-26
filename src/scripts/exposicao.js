@@ -19,9 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     images.forEach(img => {
         img.addEventListener("click", function () {
-            console.log("Clique detectado na imagem: ", this.src); //test log
+            const srcOriginal = this.src;
+            const srcWebp = srcOriginal.replace(/\.[^/.]+$/, ".webp");
+
             modal.style.display = "block";
-            modalImg.src = this.src;
+            modalImg.src = srcWebp;
             body.classList.add("no-scroll");
         });
     });
